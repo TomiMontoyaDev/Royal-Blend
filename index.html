@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total Blend Barbería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- HERO -->
+    <section
+      class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1503951914875-452162b0f3f1&quot;);
+      "
+    >
+      <h1 class="text-6xl font-bold tracking-widest">ROYAL BLEND</h1>
+      <p class="mt-4 text-xl text-gray-300">Precisión. Estilo. Confianza.</p>
+
+      <a
+        href="#mision"
+        class="mt-8 px-6 py-3 border border-white hover:bg-white hover:text-black transition"
+      >
+        Conócenos
+      </a>
+    </section>
+
+    <!-- MISION -->
+    <section id="mision" class="py-20 px-8 text-center max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">Misión</h2>
+
+      <p class="text-gray-300 text-lg">
+        En <b>Royal Blend</b> nuestra misión es ofrecer servicios de barbería de
+        alta calidad, combinando técnicas modernas con el estilo clásico para
+        brindar a cada cliente una experiencia única. Buscamos resaltar la
+        personalidad y confianza de cada persona a través de cortes precisos,
+        atención profesional y un ambiente cómodo y moderno.
+      </p>
+    </section>
+
+    <!-- VISION -->
+    <section class="py-20 px-8 text-center bg-neutral-900">
+      <h2 class="text-4xl font-bold mb-6">Visión</h2>
+
+      <p class="text-gray-300 text-lg max-w-4xl mx-auto">
+        Ser una barbería reconocida por su excelencia, innovación y estilo,
+        convirtiéndonos en un referente en el mundo del cuidado masculino. En
+        Royal Blend aspiramos a crear una comunidad donde la moda, el estilo y
+        la confianza se encuentren en cada corte.
+      </p>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section class="py-20 px-8 text-center max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-10">Objetivos</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border border-gray-700">
+          <h3 class="text-xl font-semibold mb-2">Calidad</h3>
+          <p class="text-gray-400">
+            Ofrecer cortes y estilos con técnicas profesionales y productos de
+            calidad.
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-700">
+          <h3 class="text-xl font-semibold mb-2">Experiencia</h3>
+          <p class="text-gray-400">
+            Crear un ambiente cómodo donde cada cliente disfrute el servicio.
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-700">
+          <h3 class="text-xl font-semibold mb-2">Estilo</h3>
+          <p class="text-gray-400">
+            Mantenernos actualizados con las últimas tendencias en barbería.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRANTES -->
+    <section class="py-24 px-8 bg-neutral-900 text-center">
+      <h2 class="text-5xl font-bold mb-12 tracking-widest text-yellow-400">
+        INTEGRANTES DEL PROYECTO
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div class="p-8 border-2 border-yellow-400 rounded-lg">
+          <p class="text-xl font-semibold">Matias Guzman</p>
+          <p class="text-xs font-semibold">+57 313 7360853</p>
+        </div>
+
+        <div class="p-8 border-2 border-yellow-400 rounded-lg">
+          <p class="text-xl font-semibold">Juan Sebastian Mera</p>
+          <p class="text-xs font-semibold">+57 314 7541467</p>
+        </div>
+
+        <div class="p-8 border-2 border-yellow-400 rounded-lg">
+          <p class="text-xl font-semibold">Nicolas Botero</p>
+          <p class="text-xs font-semibold">+57 310 5912925</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section class="py-20 px-8 text-center bg-black">
+      <h2 class="text-4xl font-bold mb-10">Catálogo de Estilos</h2>
+
+      <!-- BOTONES -->
+      <div class="flex justify-center gap-6 mb-12">
+        <button
+          onclick="mostrarCategoria('cortes')"
+          class="px-6 py-3 border border-white hover:bg-white hover:text-black transition"
+        >
+          Cortes
+        </button>
+
+        <button
+          onclick="mostrarCategoria('fade')"
+          class="px-6 py-3 border border-white hover:bg-white hover:text-black transition"
+        >
+          Fade
+        </button>
+
+        <button
+          onclick="mostrarCategoria('disenos')"
+          class="px-6 py-3 border border-white hover:bg-white hover:text-black transition"
+        >
+          Diseños
+        </button>
+      </div>
+
+      <!-- CORTES -->
+      <div id="cortes" class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1545921772-ec7d64bc0bba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMyfHxiYXJiZXIlMjBjdXR8ZW58MHx8MHx8fDI%3D"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1520338661084-680395057c93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxiYXJiZXIlMjBjdXR8ZW58MHx8MHx8fDI%3D"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1605497788044-5a32c7078486"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1643837832861-ba85d3b046d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxiYXJiZXIlMjBjdXR8ZW58MHx8MHx8fDI%3D"
+        />
+      </div>
+
+      <!-- FADE -->
+      <div id="fade" class="hidden grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhcmJlcnxlbnwwfHwwfHx8Mg%3D%3D"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1578390432942-d323db577792?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJhcmJlcnxlbnwwfHwwfHx8Mg%3D%3D"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/H09MIOu-Uk8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAkvnfWT5f2R5ayw4NbCaCpC9eX1g"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/JiofEd_cB_0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA__rcbqD0COrX_HrSYByDhA3iMOw"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://images.unsplash.com/photo-1640301133543-41fe25ad6450?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGJhcmJlcnxlbnwwfHwwfHx8Mg%3D%3D"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/O8qL-RVDZJg/maxresdefault.jpg"
+        />
+      </div>
+
+      <!-- DISEÑOS -->
+      <div
+        id="disenos"
+        class="hidden grid md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+      >
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/GCedh-0Ukbo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBajjxg4KUWkTPLaRUQ_rVyJWQ7hQ"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.pinimg.com/736x/aa/01/76/aa0176f6d63cceb958065d16e7929cea.jpg"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/qRprpqNp8P0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDXrbfNRMJakTjrzXoFRqn_it1Z9g"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/5K-fnAmNM34/sddefault.jpg"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://arceniospabarber.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-17-at-8.21.48-PM.jpeg"
+        />
+        <img
+          class="rounded-lg hover:scale-105 transition"
+          src="https://i.ytimg.com/vi/c7a4fBIRof0/maxresdefault.jpg"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 border-t border-gray-800 text-gray-400">
+      © 2026 Royal Blend Barbería
+    </footer>
+    <script>
+      function mostrarCategoria(cat) {
+        document.getElementById("cortes").classList.add("hidden");
+        document.getElementById("fade").classList.add("hidden");
+        document.getElementById("disenos").classList.add("hidden");
+
+        document.getElementById(cat).classList.remove("hidden");
+      }
+
+      scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
